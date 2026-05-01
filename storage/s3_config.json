@@ -1,0 +1,9 @@
+
+<!-- Logged: 2026-07-18 11:30:00 -->
+{
+  "CorsRules": [{
+    "AllowedOrigins": ["*"],
+    "AllowedMethods": ["GET", "PUT"],
+    "MaxAgeSeconds": 3000
+  }]
+}

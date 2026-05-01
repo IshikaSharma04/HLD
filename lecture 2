@@ -1,0 +1,17 @@
+case of delicious and it is a website hosted on a personal computer and it started getting traffic suddenly
+the scale is 1 million save request and server can store 40 gb with other things like os , videos audio files other sioftwares 
+we can increse the server to 300 gb but that is not the solution  we have just 5-0 days befire it runs out of space 
+so we coyld have got a larger server but that is still not a permament solutiuon also cost will increase exponentially
+here this example is vertical scaling 
+now we r going to see horizontal scaling which is distributing our data across multiple servers where all of them may have same capacity this provides infinite storage 
+when we have multiple servers shoudl we register all ofi these servers against the dns , can we have one isngle url and can we have mutiple url for the same ip address 
+when we type the url of google we can get multiple ip adress 
+from one url there are mutiple ip address
+in ican can we have a url and then multiple ip sddress
+the client request the dns servers  for the ip addressso at first the client just hits the ans serverand then the ip address is returned and then the client will
+reach out to the server wuth teh same url request 
+next time the dns might pick a different ip adress so client will recah ouyt to the diff server
+the dat aof the user will be saved in one particular server so we cant go to another server next time , so this apprioach wont work it works for google 
+
+WE need another server whose only job is redirecting and this is the node balancer , this maintains approximately same load , 
+dns is going to give the ip address of the load balancer 

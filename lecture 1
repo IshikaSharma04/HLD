@@ -1,0 +1,83 @@
+why did we learn dsa , what problems it solved -> optimizing the code 
+we optimize hthe performance with time and space thats it 
+whether y code is maintainable or extensible depends on the low level design of the code
+lld we focus o structrue of the class , we focus how to structure the code using inheritance , inteefcae , design opattern etc , etc 
+now in this we will furhtur zoo out 
+now welllearn how exactly the code should be deployed
+so tht it is availab;le and scalable 
+if multiple users are sending same request how iwll we make ti available to all of them with less latency as possible → when we hit an api , the exact time which it takes to return which we have requested is known as latency 
+latency of the code should be less
+google question → staff engineer role asked(1.5 to 3 cr )
+we r given some data and this file has words and we simply have to sort these words alphabetically 
+we can use any library function 
+but we r not hands on how to read data from a file 
+suppose we open a file or load it then what happens → first we load the data from had disk ot ram then we load in arraylist and then we use collections.sort 
+this question is easy until we discuss the requirements witht the professor 
+whenever we dont habve requirements we need to clarify it 
+the amount of dta tht we have is 1 petabyte of data 
+how much is tht ?
+question : sort all the words alphabetically (1 peta byte )
+its a staff engineer question whose pacakge goes till 2 crore , 
+1 MB = 10^6B , 
+1 GB = 10^9B , 
+1 TB = 10^12B , 
+I PB = 10^15B
+
+will the earlier approach work now in this case ?
+no bcoz we do not have this much ram nor can we fit this dta in hard disk 
+also hard disk of 1 peta byte is extrememly costly 
+so it is distributed across multiple servers 
+all serevrs will have diff capapcity some part will be present in one server and the rest in diff 
+now how do we solve htis 
+but how will we read the data that is fragmented a
+what other fdificulty will be face wen data is distributed 
+, so we will read the dta form one machine at a time adn then sort one at a time and then even after sorting it needs to be redistributed 
+can this data be corrupted or some part of hard disk is damaged 
+data ight be corrupted or the hard disk might be damaged
+each server is hving 100 gb of hard disk but one has 50 gb  and one has 2 gb f, is this scenaroio possible 
+but the ram distribution the bluw one is different will this cause an isseu 
+so the algorithm will become highly unoptimized for this 
+well always face network related issues 
+if there is ag in the network there will be a prblm
+
+data issue , server related issues , and network issue will be these r the issues which we will adrress
+how to apporcach this type of prblm
+Load Balancing, caching ,
+
+this was indias scenario 
+
+remeberingt he whole url was a very big problem 
+
+one guy called joshua asaw this as an opporutnity cox ppl used to write in book
+
+so he made a websiet where ppl can login and make bookmarks
+these 2 types of table will be , we need to know first the memory required for each row 
+
+id will be integer , what is the size of nan integer which takes 4 bytes 
+
+when gangam style song was launched it crossd 1 billionviews hence 4 bytes is a small number we need a larger datatype like 8 byte and url should be 1000 bytes or 1 kb
+
+so my listen will last 40 days at max 
+
+so a better option can be that now hes having 4 0 gb but he buys 500 gb server but this will lsst like 500 days but same prblm with happen 
+
+instead of storing entire data inonr server we can use muliple servers
+
+but now how do we divide the data 
+
+also if we have multiple servers then whose id will be saved in the dns 
+
+computers do not understand string
+dns holds the mapping but how is running this dns 
+
+there is a centralized system which maintains a list of all the ip addresses along  with  the urls that organization is icann 
+
+icann has some server ideally what should happen is that wheneevr some user tries ro open some website the user should first reach out to icann server and icann should be giving user the ip address of the specific website and then the user is going to reach out to that particular ip address
+
+so everyonr eill come and mask icann hence it will become the singl point of failure thats is qhy instead of icann all the requests are redirected to dns server now dns becomes single point of failure and who is running this dns server 
+
+ican can be a single point of failure but dns will never be a sop to understand that we need to know who is running and maintaining these servers also who is copying this eentire data from ican to dns   
+
+if ican goes down a lot of company gfoes through losses of million of dollars 
+
+if dns are not there and lets say that ican wont go down

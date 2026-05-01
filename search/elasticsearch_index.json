@@ -1,0 +1,10 @@
+
+<!-- Logged: 2026-08-20 09:15:00 -->
+{
+  "mappings": {
+    "properties": {
+      "title": { "type": "text", "analyzer": "standard" },
+      "tags": { "type": "keyword" }
+    }
+  }
+}

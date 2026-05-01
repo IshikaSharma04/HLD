@@ -1,0 +1,9 @@
+
+<!-- Logged: 2026-08-19 18:10:00 -->
+api_gateway:
+  rate_limiting:
+    enabled: true
+    max_requests_per_minute: 120
+    strategy: token_bucket
+  security:
+    tls_version: 1.3
