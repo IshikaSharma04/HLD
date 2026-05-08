@@ -1,0 +1,11 @@
+
+// Logged: 2026-05-08 11:30:00
+import { useState, useEffect } from 'react';
+export const useFetch = (url) => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    fetch(url).then(res => res.json()).then(d => { setData(d); setLoading(false); });
+  }, [url]);
+  return { data, loading };
+};
