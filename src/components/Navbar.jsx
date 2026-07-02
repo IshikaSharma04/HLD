@@ -222,3 +222,11 @@ export const Navbar = () => (
     <span className="font-bold">HLD Dashboard</span>
   </nav>
 );
+
+// Logged: 2026-07-02 11:30:00
+import React from 'react';
+export const Navbar = () => (
+  <nav className="flex justify-between p-4 bg-gray-900 text-white">
+    <span className="font-bold">HLD Dashboard</span>
+  </nav>
+);
